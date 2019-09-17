@@ -1,0 +1,22 @@
+{
+  "name": "lambda-redis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "dependencies": {
+    "ioredis": "^4.14.1",
+    "redis": "^2.8.0"
+  },
+  "devDependencies": {
+    "serverless": "^1.52.0",
+    "serverless-offline": "^5.11.0"
+  },
+  "scripts": {
+    "startcache": "REDIS_ENDPOINT=localhost:6379 serverless offline start --skipCacheInvalidation",
+    "start": "REDIS_ENDPOINT=localhost:6379 serverless offline start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
